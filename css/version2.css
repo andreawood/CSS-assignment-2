@@ -41,17 +41,19 @@ nav ul li {
 
 article {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
+    justify-content: center;
+    padding: 2.5rem;
 }
 
 section {
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 600px;
 }
 
 h2 {
-    text-align: center;
+    margin: 0;
 }
 
 footer {
@@ -61,20 +63,17 @@ footer {
 }
 
 .text {
-    background: #fff;
     color: #000;
-    padding: 2rem;
-    line-height: 1.5rem;
+    padding-left: 2.5rem;
+    line-height: 1.25rem;
+    font-size: .95rem;
 }
 
 .photo {
     color: #000;
-    margin-bottom: 1.5rem;
+    max-width: 600px;
 }
 
-.photo p {
-  font-size: .9rem
-}
 
 #cougar {
     background: #B26219;
@@ -90,8 +89,20 @@ footer {
 
 #cougar .photo p {
   color: #fff;
+  font-size: .8rem;
 }
 
+#lion .photo p {
+    font-size: .8rem;
+}
+
+#tiger .photo p {
+    font-size: .8rem;
+}
+
+#cougar .text {
+  color: #fff;
+}
 
 /* ----- SUGGESTED COLORS -----
     - ARTICLES
@@ -116,9 +127,11 @@ footer {
 /* --- you may ADD other link pseudo classes for
         specific articles or sections to improve CONTRAST --- */
 
+
 a {
     color: #379CB2;
 }
+
 a:hover {
     color: #256d7d;
 }
